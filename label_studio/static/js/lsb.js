@@ -185,9 +185,9 @@ const LSB = function(elid, config, task) {
       "update", // update button  on controls
       "predictions",
       //"predictions:menu", // right menu with prediction items
-      //"completions:menu", // right menu with completion items
-      //"completions:add-new",
-      //"completions:delete",
+      "completions:menu", // right menu with completion items
+      "completions:add-new",
+      "completions:delete",
       "side-column", // entity
       "skip"
     ],
