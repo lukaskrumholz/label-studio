@@ -1,0 +1,11 @@
+[
+    {"image": "https://raw.githubusercontent.com/lukaskrumholz/label-studio/master/example_images/cover_letter_1.png"},
+    {"image": "https://raw.githubusercontent.com/lukaskrumholz/label-studio/master/example_images/resume_1_1.png"},
+    {"image": "https://raw.githubusercontent.com/lukaskrumholz/label-studio/master/example_images/resume_1_2.png"},
+    {"image": "https://raw.githubusercontent.com/lukaskrumholz/label-studio/master/example_images/recomm_1.png"},
+    {"image": "https://raw.githubusercontent.com/lukaskrumholz/label-studio/master/example_images/certificate_1.png"},
+    {"image": "https://raw.githubusercontent.com/lukaskrumholz/label-studio/master/example_images/cover_letter_2.png"},
+    {"image": "https://raw.githubusercontent.com/lukaskrumholz/label-studio/master/example_images/resume_2_1.png"},
+    {"image": "https://raw.githubusercontent.com/lukaskrumholz/label-studio/master/example_images/resume_2_2.png"},
+    {"image": "https://raw.githubusercontent.com/lukaskrumholz/label-studio/master/example_images/recomm_2.png"}
+]
