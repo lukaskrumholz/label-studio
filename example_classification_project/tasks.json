@@ -3,19 +3,109 @@
         "id": 0,
         "data": {
             "image": "https://raw.githubusercontent.com/lukaskrumholz/label-studio/master/example_images/cover_letter_1.png"
-        }
+        },
+        "predictions": [
+            {
+                "model_version": "model 1",
+                "created_ago": "4 hours",
+                "result": [
+                    {
+                        "from_name": "choice_start",
+                        "id": "VMPnt4V6lk",
+                        "to_name": "image",
+                        "type": "choices",
+                        "value": {
+                            "choices": [
+                                "Yes"
+                            ]
+                        }
+                    },
+                    {
+                        "from_name": "choice_type",
+                        "id": "-kfz-bpFbC",
+                        "to_name": "image",
+                        "type": "choices",
+                        "value": {
+                            "choices": [
+                                "Cover Letter"
+                            ]
+                        }
+                    },
+                    {
+                        "from_name": "color_choice",
+                        "id": "XDj-5K4s_Y",
+                        "to_name": "image",
+                        "type": "choices",
+                        "value": {
+                            "choices": [
+                                "BW"
+                            ]
+                        }
+                    }
+            ]
+            }
+        ]
     },
     "1": {
         "id": 1,
         "data": {
             "image": "https://raw.githubusercontent.com/lukaskrumholz/label-studio/master/example_images/resume_1_1.png"
-        }
+        },
+        "predictions": [
+            {
+                "model_version": "model 1",
+                "created_ago": "4 hours",
+                "result": [
+                    {
+                        "from_name": "choice_start",
+                        "id": "VMPnt4V6lk",
+                        "to_name": "image",
+                        "type": "choices",
+                        "value": {
+                            "choices": [
+                                "Yes"
+                            ]
+                        }
+                    }
+            ]
+            }
+        ]
     },
     "2": {
         "id": 2,
         "data": {
             "image": "https://raw.githubusercontent.com/lukaskrumholz/label-studio/master/example_images/resume_1_2.png"
-        }
+        },
+        "predictions": [
+            {
+                "model_version": "model 1",
+                "created_ago": "4 hours",
+                "result": [
+                    {
+                        "from_name": "choice_start",
+                        "id": "VMPnt4V6lk",
+                        "to_name": "image",
+                        "type": "choices",
+                        "value": {
+                            "choices": [
+                                "No"
+                            ]
+                        }
+                    },
+                    {
+                        "from_name": "color_choice",
+                        "id": "XDj-5K4s_Y",
+                        "to_name": "image",
+                        "type": "choices",
+                        "value": {
+                            "choices": [
+                                "Color"
+                            ]
+                        }
+                    }
+            ]
+            }
+        ]
     },
     "3": {
         "id": 3,
@@ -27,7 +117,26 @@
         "id": 4,
         "data": {
             "image": "https://raw.githubusercontent.com/lukaskrumholz/label-studio/master/example_images/certificate_1.png"
-        }
+        },
+        "predictions": [
+            {
+                "model_version": "model 1",
+                "created_ago": "4 hours",
+                "result": [
+                    {
+                        "from_name": "color_choice",
+                        "id": "XDj-5K4s_Y",
+                        "to_name": "image",
+                        "type": "choices",
+                        "value": {
+                            "choices": [
+                                "Color"
+                            ]
+                        }
+                    }
+            ]
+            }
+        ]
     },
     "5": {
         "id": 5,

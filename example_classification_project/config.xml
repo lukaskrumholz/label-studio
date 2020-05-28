@@ -1,12 +1,12 @@
 <View>
   <Image name="image" value="$image"/>
   <Header value="Start of new Document Type:"></Header>
-  <Choices name="choice" toName="image" showInLine="true">
+  <Choices name="choice_start" toName="image" showInLine="true">
     <Choice value="Yes" background="blue"/>
     <Choice value="No" background="green" />
   </Choices>
   <Header value="Choose Document Type:"></Header>
-  <Choices name="choice" toName="image" showInLine="true">
+  <Choices name="choice_type" toName="image" showInLine="true">
     <Choice value="Cover Letter" background="blue"/>
     <Choice value="Resume" background="green" />
     <Choice value="Certificate" background="green" />
