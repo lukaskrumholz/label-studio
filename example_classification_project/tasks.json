@@ -1,0 +1,55 @@
+{
+    "0": {
+        "id": 0,
+        "data": {
+            "image": "https://raw.githubusercontent.com/lukaskrumholz/label-studio/master/example_images/cover_letter_1.png"
+        }
+    },
+    "1": {
+        "id": 1,
+        "data": {
+            "image": "https://raw.githubusercontent.com/lukaskrumholz/label-studio/master/example_images/resume_1_1.png"
+        }
+    },
+    "2": {
+        "id": 2,
+        "data": {
+            "image": "https://raw.githubusercontent.com/lukaskrumholz/label-studio/master/example_images/resume_1_2.png"
+        }
+    },
+    "3": {
+        "id": 3,
+        "data": {
+            "image": "https://raw.githubusercontent.com/lukaskrumholz/label-studio/master/example_images/recomm_1.png"
+        }
+    },
+    "4": {
+        "id": 4,
+        "data": {
+            "image": "https://raw.githubusercontent.com/lukaskrumholz/label-studio/master/example_images/certificate_1.png"
+        }
+    },
+    "5": {
+        "id": 5,
+        "data": {
+            "image": "https://raw.githubusercontent.com/lukaskrumholz/label-studio/master/example_images/cover_letter_2.png"
+        }
+    },
+    "6": {
+        "id": 6,
+        "data": {
+            "image": "https://raw.githubusercontent.com/lukaskrumholz/label-studio/master/example_images/resume_2_1.png"
+        }
+    },
+    "7": {
+        "id": 7,
+        "data": {
+            "image": "https://raw.githubusercontent.com/lukaskrumholz/label-studio/master/example_images/resume_2_2.png"
+        }
+    },
+    "8": {
+        "id": 8,
+        "data": {
+            "image": "https://raw.githubusercontent.com/lukaskrumholz/label-studio/master/example_images/recomm_2.png"
+        }
+    }}

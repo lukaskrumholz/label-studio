@@ -1,0 +1,20 @@
+<View>
+  <Image name="image" value="$image"/>
+  <Header value="Start of new Document Type:"></Header>
+  <Choices name="choice" toName="image" showInLine="true">
+    <Choice value="Yes" background="blue"/>
+    <Choice value="No" background="green" />
+  </Choices>
+  <Header value="Choose Document Type:"></Header>
+  <Choices name="choice" toName="image" showInLine="true">
+    <Choice value="Cover Letter" background="blue"/>
+    <Choice value="Resume" background="green" />
+    <Choice value="Certificate" background="green" />
+    <Choice value="Letter of Recommendation" background="green" />
+  </Choices>
+  <Header value="Choose Color:"></Header>
+  <Choices name="color_choice" toName="image" showInLine="true">
+    <Choice value="Color" background="blue"/>
+    <Choice value="BW" background="green" />
+  </Choices>
+</View>
