@@ -184,10 +184,10 @@ const LSB = function(elid, config, task) {
       "submit", // submit button on controls
       "update", // update button  on controls
       "predictions",
-      "predictions:menu", // right menu with prediction items
-      "completions:menu", // right menu with completion items
-      "completions:add-new",
-      "completions:delete",
+      //"predictions:menu", // right menu with prediction items
+      //"completions:menu", // right menu with completion items
+      //"completions:add-new",
+      //"completions:delete",
       "side-column", // entity
       "skip"
     ],
