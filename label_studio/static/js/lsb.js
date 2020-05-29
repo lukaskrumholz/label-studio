@@ -179,7 +179,7 @@ const LSB = function(elid, config, task) {
     task: _convertTask(task),
     interfaces: [
       "basic",
-      //"panel", // undo, redo, reset panel
+      "panel", // undo, redo, reset panel
       "controls", // all control buttons: skip, submit, update
       "submit", // submit button on controls
       "update", // update button  on controls
