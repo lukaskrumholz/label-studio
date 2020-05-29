@@ -14,12 +14,12 @@ with open('requirements.txt') as f:
 setuptools.setup(
     name='label-studio',
     version=version,
-    author='Heartex',
-    author_email="hello@heartex.ai",
+    author='Lukas Krumholz',
+    author_email="lukas@luminovo.ai",
     description='Label Studio annotation tool',
     long_description=long_description,
     long_description_content_type='text/markdown',
-    url='https://github.com/heartexlabs/label-studio',
+    url='https://github.com/lukaskrumholz/label-studio',
     packages=setuptools.find_packages(),
     include_package_data=True,
     classifiers=[
