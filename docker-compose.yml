@@ -6,8 +6,8 @@ services:
     build: .
     working_dir: /label-studio
     volumes:
-      - ./my_project:/label-studio/my_project
-    command: "label-studio start my_project ${INIT_COMMAND} --host 0.0.0.0"
+      - ./example_classification_project:/label-studio/example_classification_project
+    command: "label-studio start example_classification_project ${INIT_COMMAND} --host 0.0.0.0"
     ports: 
       - "8080:8080"
     restart: always
