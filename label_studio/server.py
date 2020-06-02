@@ -44,6 +44,8 @@ app = flask.Flask(__name__, static_url_path='')
 app.secret_key = 'A0Zrdqwf1AQWj12ajkhgFN]dddd/,?RfDWQQT'
 app.config['SEND_FILE_MAX_AGE_DEFAULT'] = 0
 
+app.config['USER_LOGGED_IN'] = False
+
 # input arguments
 input_args = None
 if os.path.exists('server.json'):
@@ -137,6 +139,10 @@ def labeling_page():
     """ Label studio frontend: task labeling
     """
     project = project_get_or_create()
+
+    if not app.config['USER_LOGGED_IN']:
+        return redirect("/login")
+
     if len(project.tasks) == 0:
         return redirect('/welcome')
 
@@ -163,6 +169,10 @@ def labeling_page():
 def welcome_page():
     """ Label studio frontend: task labeling
     """
+
+    if not app.config['USER_LOGGED_IN']:
+        return redirect("/login")
+
     project = project_get_or_create()
     project.analytics.send(getframeinfo(currentframe()).function)
     project.update_on_boarding_state()
@@ -178,6 +188,10 @@ def welcome_page():
 def tasks_page():
     """ Tasks and completions page: tasks.html
     """
+
+    if not app.config['USER_LOGGED_IN']:
+        return redirect("/login")
+
     project = project_get_or_create()
 
     label_config = open(project.config['label_config']).read()  # load editor config from XML
@@ -203,6 +217,10 @@ def tasks_page():
 def setup_page():
     """ Setup label config
     """
+
+    if not app.config['USER_LOGGED_IN']:
+        return redirect("/login")
+
     project = project_get_or_create()
 
     templates = get_config_templates()
@@ -223,6 +241,10 @@ def setup_page():
 def import_page():
     """ Import tasks from JSON, CSV, ZIP and more
     """
+
+    if not app.config['USER_LOGGED_IN']:
+        return redirect("/login")
+
     project = project_get_or_create()
 
     project.analytics.send(getframeinfo(currentframe()).function)
@@ -238,6 +260,10 @@ def import_page():
 def export_page():
     """ Export completions as JSON or using converters
     """
+
+    if not app.config['USER_LOGGED_IN']:
+        return redirect("/login")
+
     project = project_get_or_create()
     project.analytics.send(getframeinfo(currentframe()).function)
     return flask.render_template(
@@ -251,6 +277,10 @@ def export_page():
 @app.route('/model')
 def model_page():
     """ Machine learning"""
+
+    if not app.config['USER_LOGGED_IN']:
+        return redirect("/login")
+
     project = project_get_or_create()
     project.analytics.send(getframeinfo(currentframe()).function)
     ml_backends = []
@@ -740,6 +770,23 @@ def get_data_file(filename):
     return flask.send_from_directory(directory, filename, as_attachment=True)
 
 
+# Route for handling the login page logic
+@app.route('/login', methods=['GET', 'POST'])
+def login():
+    error = None
+    if request.method == 'POST':
+        if request.form['username'] != 'admin' or request.form['password'] != 'admin':
+            error = 'Invalid Credentials. Please try again.'
+        else:
+            app.config['USER_LOGGED_IN'] = True
+            return redirect('/')
+    
+    if app.config['USER_LOGGED_IN']:
+        return redirect('/')
+
+    return flask.render_template('login.html', error=error)
+
+
 def str2datetime(timestamp_str):
     try:
         ts = int(timestamp_str)
@@ -791,7 +838,7 @@ def main():
         label_studio.utils.functions.HOSTNAME = 'http://localhost:' + str(port)
 
         if not input_args.no_browser:
-            browser_url = label_studio.utils.functions.HOSTNAME + '/welcome'
+            browser_url = label_studio.utils.functions.HOSTNAME + '/login'
             threading.Timer(2.5, lambda: webbrowser.open(browser_url)).start()
             print('Start browser at URL: ' + browser_url)
 
