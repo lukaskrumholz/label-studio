@@ -1,20 +1,20 @@
 <View>
   <Image name="image" value="$image"/>
-  <Header value="Start of new Document Type:"></Header>
+  <Header value="Start of new Document:"></Header>
   <Choices name="choice_start" toName="image" showInLine="true">
-    <Choice value="Yes" background="blue"/>
-    <Choice value="No" background="green" />
+    <Choice hotkey="ctrl+y" value="Yes" background="blue"/>
+    <Choice hotkey="ctrl+x" value="No" background="green" />
   </Choices>
   <Header value="Choose Document Type:"></Header>
   <Choices name="choice_type" toName="image" showInLine="true">
-    <Choice value="Cover Letter" background="blue"/>
-    <Choice value="Resume" background="green" />
-    <Choice value="Certificate" background="green" />
-    <Choice value="Letter of Recommendation" background="green" />
+    <Choice hotkey="C" value="Cover Letter" background="blue"/>
+    <Choice hotkey="R" value="Resume" background="green" />
+    <Choice hotkey="F" value="Certificate" background="green" />
+    <Choice hotkey="L" value="Letter of Recommendation" background="green" />
   </Choices>
   <Header value="Choose Color:"></Header>
   <Choices name="color_choice" toName="image" showInLine="true">
-    <Choice value="Color" background="blue"/>
-    <Choice value="BW" background="green" />
+    <Choice hotkey="ctrl+c" value="Color" background="blue"/>
+    <Choice hotkey="ctrl+b" value="BW" background="green" />
   </Choices>
 </View>
