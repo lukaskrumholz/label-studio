@@ -773,6 +773,7 @@ def get_data_file(filename):
 # Route for handling the login page logic
 @app.route('/login', methods=['GET', 'POST'])
 def login():
+    project = project_get_or_create()
     error = None
     if request.method == 'POST':
         if request.form['username'] != 'admin' or request.form['password'] != 'admin':
@@ -784,7 +785,7 @@ def login():
     if app.config['USER_LOGGED_IN']:
         return redirect('/')
 
-    return flask.render_template('login.html', error=error)
+    return flask.render_template('login.html', config=project.config, error=error)
 
 
 def str2datetime(timestamp_str):
