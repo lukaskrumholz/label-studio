@@ -2,7 +2,8 @@
     "0": {
         "id": 0,
         "data": {
-            "image": "https://raw.githubusercontent.com/lukaskrumholz/label-studio/master/example_images/cover_letter_1.png"
+            "image": "https://raw.githubusercontent.com/lukaskrumholz/label-studio/master/example_images/cover_letter_1.png",
+            "pdf": "<iframe src='https://docs.google.com/gview?url=https://raw.githubusercontent.com/lukaskrumholz/label-studio/master/example_images/application_1.pdf&embedded=true#toolbar=0&navpanes=0&scrollbar=0&statusbar=0&messages=0&scrollbar=0' width='100%' height='600px'</iframe>"
         },
         "predictions": [
             {
@@ -10,29 +11,26 @@
                 "created_ago": "4 hours",
                 "result": [
                     {
-                        "from_name": "choice_start",
-                        "id": "VMPnt4V6lk",
-                        "to_name": "image",
-                        "type": "choices",
-                        "value": {
-                            "choices": [
-                                "Yes"
-                            ]
-                        }
-                    },
-                    {
                         "from_name": "choice_type",
-                        "id": "-kfz-bpFbC",
+                        "id": "XDj-5K4s_Y",
                         "to_name": "image",
                         "type": "choices",
                         "value": {
                             "choices": [
-                                "Cover Letter"
+                                "124 - Cover Letter"
                             ]
                         }
                     },
                     {
-                        "from_name": "color_choice",
+                        "from_name": "image",
+                        "to_name": "free_text_answer",
+                        "type": "textarea",
+                        "value": {
+                            "text": "Michelle"
+                        }
+                    },
+                    {
+                        "from_name": "choice_color",
                         "id": "XDj-5K4s_Y",
                         "to_name": "image",
                         "type": "choices",
@@ -42,14 +40,15 @@
                             ]
                         }
                     }
-            ]
+                ]
             }
         ]
     },
     "1": {
         "id": 1,
         "data": {
-            "image": "https://raw.githubusercontent.com/lukaskrumholz/label-studio/master/example_images/resume_1_1.png"
+            "image": "https://raw.githubusercontent.com/lukaskrumholz/label-studio/master/example_images/resume_1_1.png",
+            "pdf": "<embed src='https://docs.google.com/gview?url=https://raw.githubusercontent.com/lukaskrumholz/label-studio/master/example_images/application_1.pdf&embedded=true#toolbar=0&navpanes=0&scrollbar=0&statusbar=0&messages=0&scrollbar=0' width='100%' height='600px'</embed>"
         },
         "predictions": [
             {
@@ -57,24 +56,36 @@
                 "created_ago": "4 hours",
                 "result": [
                     {
-                        "from_name": "choice_start",
-                        "id": "VMPnt4V6lk",
+                        "from_name": "choice_type",
+                        "id": "XDj-5K4s_Y",
                         "to_name": "image",
                         "type": "choices",
                         "value": {
                             "choices": [
-                                "Yes"
+                                "143 - Resumee"
+                            ]
+                        }
+                    },
+                    {
+                        "from_name": "choice_color",
+                        "id": "XDj-5K4s_Y",
+                        "to_name": "image",
+                        "type": "choices",
+                        "value": {
+                            "choices": [
+                                "Color"
                             ]
                         }
                     }
-            ]
+                ]
             }
         ]
     },
     "2": {
         "id": 2,
         "data": {
-            "image": "https://raw.githubusercontent.com/lukaskrumholz/label-studio/master/example_images/resume_1_2.png"
+            "image": "https://raw.githubusercontent.com/lukaskrumholz/label-studio/master/example_images/resume_1_2.png",
+            "pdf": "<iframe src='https://researchtorevenue.files.wordpress.com/2015/04/1r41ai10801601_fong.pdf#page=3' width='100%' height='600px'</iframe>"
         },
         "predictions": [
             {
@@ -82,41 +93,39 @@
                 "created_ago": "4 hours",
                 "result": [
                     {
-                        "from_name": "choice_start",
-                        "id": "VMPnt4V6lk",
-                        "to_name": "image",
-                        "type": "choices",
-                        "value": {
-                            "choices": [
-                                "No"
-                            ]
-                        }
-                    },
-                    {
-                        "from_name": "color_choice",
+                        "from_name": "choice_type",
                         "id": "XDj-5K4s_Y",
                         "to_name": "image",
                         "type": "choices",
                         "value": {
                             "choices": [
-                                "Color"
+                                "135 - Certificate"
                             ]
                         }
                     }
-            ]
+                ]
             }
         ]
     },
     "3": {
         "id": 3,
         "data": {
-            "image": "https://raw.githubusercontent.com/lukaskrumholz/label-studio/master/example_images/recomm_1.png"
+            "image": "https://raw.githubusercontent.com/lukaskrumholz/label-studio/master/example_images/recomm_1.png",
+            "pdf": "<iframe src='https://docs.google.com/gview?url=https://raw.githubusercontent.com/lukaskrumholz/label-studio/master/example_images/application_1.pdf&embedded=true#toolbar=0&navpanes=0&scrollbar=0&statusbar=0&messages=0&scrollbar=0' width='100%' height='600px'</iframe>"
         }
     },
     "4": {
         "id": 4,
         "data": {
-            "image": "https://raw.githubusercontent.com/lukaskrumholz/label-studio/master/example_images/certificate_1.png"
+            "image": "https://raw.githubusercontent.com/lukaskrumholz/label-studio/master/example_images/certificate_1.png",
+            "pdf": "<iframe src='https://docs.google.com/gview?url=https://raw.githubusercontent.com/lukaskrumholz/label-studio/master/example_images/application_1.pdf&embedded=true#toolbar=0&navpanes=0&scrollbar=0&statusbar=0&messages=0&scrollbar=0' width='100%' height='600px'</iframe>"
+        }
+    },
+    "5": {
+        "id": 5,
+        "data": {
+            "image": "https://raw.githubusercontent.com/lukaskrumholz/label-studio/master/example_images/cover_letter_2.png",
+            "pdf": "<iframe src='https://docs.google.com/gview?url=https://raw.githubusercontent.com/lukaskrumholz/label-studio/master/example_images/application_2.pdf&embedded=true#toolbar=0&navpanes=0&scrollbar=0&statusbar=0&messages=0&scrollbar=0' width='100%' height='600px'</iframe>"
         },
         "predictions": [
             {
@@ -124,41 +133,37 @@
                 "created_ago": "4 hours",
                 "result": [
                     {
-                        "from_name": "color_choice",
-                        "id": "XDj-5K4s_Y",
-                        "to_name": "image",
-                        "type": "choices",
+                        "from_name": "image",
+                        "to_name": "free_text_answer",
+                        "type": "textarea",
                         "value": {
-                            "choices": [
-                                "Color"
-                            ]
+                            "text": "Duke Wellington"
                         }
                     }
-            ]
+                ]
             }
         ]
-    },
-    "5": {
-        "id": 5,
-        "data": {
-            "image": "https://raw.githubusercontent.com/lukaskrumholz/label-studio/master/example_images/cover_letter_2.png"
-        }
     },
     "6": {
         "id": 6,
         "data": {
-            "image": "https://raw.githubusercontent.com/lukaskrumholz/label-studio/master/example_images/resume_2_1.png"
+            "image": "https://raw.githubusercontent.com/lukaskrumholz/label-studio/master/example_images/resume_2_1.png",
+            "pdf": "<iframe src='https://docs.google.com/gview?url=https://raw.githubusercontent.com/lukaskrumholz/label-studio/master/example_images/application_2.pdf&embedded=true#toolbar=0&navpanes=0&scrollbar=0&statusbar=0&messages=0&scrollbar=0' width='100%' height='600px'</iframe>"
         }
     },
     "7": {
         "id": 7,
         "data": {
-            "image": "https://raw.githubusercontent.com/lukaskrumholz/label-studio/master/example_images/resume_2_2.png"
+            "image": "https://raw.githubusercontent.com/lukaskrumholz/label-studio/master/example_images/resume_2_2.png",
+            "pdf": "<iframe src='https://docs.google.com/gview?url=https://raw.githubusercontent.com/lukaskrumholz/label-studio/master/example_images/application_2.pdf&embedded=true#toolbar=0&navpanes=0&scrollbar=0&statusbar=0&messages=0&scrollbar=0' width='100%' height='600px'</iframe>"
+
         }
     },
     "8": {
         "id": 8,
         "data": {
-            "image": "https://raw.githubusercontent.com/lukaskrumholz/label-studio/master/example_images/recomm_2.png"
+            "image": "https://raw.githubusercontent.com/lukaskrumholz/label-studio/master/example_images/recomm_2.png",
+            "pdf": "<iframe src='https://docs.google.com/gview?url=https://raw.githubusercontent.com/lukaskrumholz/label-studio/master/example_images/application_2.pdf&embedded=true#toolbar=0&navpanes=0&scrollbar=0&statusbar=0&messages=0&scrollbar=0' width='100%' height='600px'</iframe>"
         }
-    }}
+    }
+}
