@@ -3,7 +3,7 @@
         "id": 0,
         "data": {
             "image": "https://raw.githubusercontent.com/lukaskrumholz/label-studio/master/example_images/cover_letter_1.png",
-            "pdf": "<iframe src='https://docs.google.com/gview?url=https://raw.githubusercontent.com/lukaskrumholz/label-studio/master/example_images/application_1.pdf&embedded=true#toolbar=0&navpanes=0&scrollbar=0&statusbar=0&messages=0&scrollbar=0' width='100%' height='600px'</iframe>"
+            "pdf": "<iframe src='https://docs.google.com/gview?url=https://raw.githubusercontent.com/lukaskrumholz/label-studio/master/example_images/application_1.pdf&embedded=true' width='100%' height='600px'</iframe>"
         },
         "predictions": [
             {
@@ -48,7 +48,7 @@
         "id": 1,
         "data": {
             "image": "https://raw.githubusercontent.com/lukaskrumholz/label-studio/master/example_images/resume_1_1.png",
-            "pdf": "<embed src='https://docs.google.com/gview?url=https://raw.githubusercontent.com/lukaskrumholz/label-studio/master/example_images/application_1.pdf&embedded=true#toolbar=0&navpanes=0&scrollbar=0&statusbar=0&messages=0&scrollbar=0' width='100%' height='600px'</embed>"
+            "pdf": "<embed src='https://docs.google.com/gview?url=https://raw.githubusercontent.com/lukaskrumholz/label-studio/master/example_images/application_1.pdf&embedded=true' width='100%' height='600px'</embed>"
         },
         "predictions": [
             {
@@ -85,7 +85,7 @@
         "id": 2,
         "data": {
             "image": "https://raw.githubusercontent.com/lukaskrumholz/label-studio/master/example_images/resume_1_2.png",
-            "pdf": "<iframe src='https://researchtorevenue.files.wordpress.com/2015/04/1r41ai10801601_fong.pdf#page=3' width='100%' height='600px'</iframe>"
+            "pdf": "<iframe src='https://docs.google.com/gview?url=https://raw.githubusercontent.com/lukaskrumholz/label-studio/master/example_images/application_1.pdf&embedded=true' width='100%' height='600px'</iframe>"
         },
         "predictions": [
             {
@@ -111,21 +111,21 @@
         "id": 3,
         "data": {
             "image": "https://raw.githubusercontent.com/lukaskrumholz/label-studio/master/example_images/recomm_1.png",
-            "pdf": "<iframe src='https://docs.google.com/gview?url=https://raw.githubusercontent.com/lukaskrumholz/label-studio/master/example_images/application_1.pdf&embedded=true#toolbar=0&navpanes=0&scrollbar=0&statusbar=0&messages=0&scrollbar=0' width='100%' height='600px'</iframe>"
+            "pdf": "<iframe src='https://docs.google.com/gview?url=https://raw.githubusercontent.com/lukaskrumholz/label-studio/master/example_images/application_1.pdf&embedded=true' width='100%' height='600px'</iframe>"
         }
     },
     "4": {
         "id": 4,
         "data": {
             "image": "https://raw.githubusercontent.com/lukaskrumholz/label-studio/master/example_images/certificate_1.png",
-            "pdf": "<iframe src='https://docs.google.com/gview?url=https://raw.githubusercontent.com/lukaskrumholz/label-studio/master/example_images/application_1.pdf&embedded=true#toolbar=0&navpanes=0&scrollbar=0&statusbar=0&messages=0&scrollbar=0' width='100%' height='600px'</iframe>"
+            "pdf": "<iframe src='https://docs.google.com/gview?url=https://raw.githubusercontent.com/lukaskrumholz/label-studio/master/example_images/application_1.pdf&embedded=true' width='100%' height='600px'</iframe>"
         }
     },
     "5": {
         "id": 5,
         "data": {
             "image": "https://raw.githubusercontent.com/lukaskrumholz/label-studio/master/example_images/cover_letter_2.png",
-            "pdf": "<iframe src='https://docs.google.com/gview?url=https://raw.githubusercontent.com/lukaskrumholz/label-studio/master/example_images/application_2.pdf&embedded=true#toolbar=0&navpanes=0&scrollbar=0&statusbar=0&messages=0&scrollbar=0' width='100%' height='600px'</iframe>"
+            "pdf": "<iframe src='https://docs.google.com/gview?url=https://raw.githubusercontent.com/lukaskrumholz/label-studio/master/example_images/application_2.pdf&embedded=true' width='100%' height='600px'</iframe>"
         },
         "predictions": [
             {
@@ -148,14 +148,14 @@
         "id": 6,
         "data": {
             "image": "https://raw.githubusercontent.com/lukaskrumholz/label-studio/master/example_images/resume_2_1.png",
-            "pdf": "<iframe src='https://docs.google.com/gview?url=https://raw.githubusercontent.com/lukaskrumholz/label-studio/master/example_images/application_2.pdf&embedded=true#toolbar=0&navpanes=0&scrollbar=0&statusbar=0&messages=0&scrollbar=0' width='100%' height='600px'</iframe>"
+            "pdf": "<iframe src='https://docs.google.com/gview?url=https://raw.githubusercontent.com/lukaskrumholz/label-studio/master/example_images/application_2.pdf&embedded=true' width='100%' height='600px'</iframe>"
         }
     },
     "7": {
         "id": 7,
         "data": {
             "image": "https://raw.githubusercontent.com/lukaskrumholz/label-studio/master/example_images/resume_2_2.png",
-            "pdf": "<iframe src='https://docs.google.com/gview?url=https://raw.githubusercontent.com/lukaskrumholz/label-studio/master/example_images/application_2.pdf&embedded=true#toolbar=0&navpanes=0&scrollbar=0&statusbar=0&messages=0&scrollbar=0' width='100%' height='600px'</iframe>"
+            "pdf": "<iframe src='https://docs.google.com/gview?url=https://raw.githubusercontent.com/lukaskrumholz/label-studio/master/example_images/application_2.pdf&embedded=true' width='100%' height='600px'</iframe>"
 
         }
     },
@@ -163,7 +163,178 @@
         "id": 8,
         "data": {
             "image": "https://raw.githubusercontent.com/lukaskrumholz/label-studio/master/example_images/recomm_2.png",
-            "pdf": "<iframe src='https://docs.google.com/gview?url=https://raw.githubusercontent.com/lukaskrumholz/label-studio/master/example_images/application_2.pdf&embedded=true#toolbar=0&navpanes=0&scrollbar=0&statusbar=0&messages=0&scrollbar=0' width='100%' height='600px'</iframe>"
+            "pdf": "<iframe src='https://docs.google.com/gview?url=https://raw.githubusercontent.com/lukaskrumholz/label-studio/master/example_images/application_2.pdf&embedded=true' width='100%' height='600px'</iframe>"
+        }
+    },
+
+
+
+
+    "9": {
+        "id": 9,
+        "data": {
+            "image": "https://raw.githubusercontent.com/lukaskrumholz/label-studio/master/example_images/cover_letter_1.png",
+            "pdf": "<iframe src='https://docs.google.com/gview?url=https://raw.githubusercontent.com/lukaskrumholz/label-studio/master/example_images/application_1.pdf&embedded=true' width='100%' height='600px'</iframe>"
+        },
+        "predictions": [
+            {
+                "model_version": "model 1",
+                "created_ago": "4 hours",
+                "result": [
+                    {
+                        "from_name": "choice_type",
+                        "id": "XDj-5K4s_Y",
+                        "to_name": "image",
+                        "type": "choices",
+                        "value": {
+                            "choices": [
+                                "124 - Cover Letter"
+                            ]
+                        }
+                    },
+                    {
+                        "from_name": "image",
+                        "to_name": "free_text_answer",
+                        "type": "textarea",
+                        "value": {
+                            "text": "Michelle"
+                        }
+                    },
+                    {
+                        "from_name": "choice_color",
+                        "id": "XDj-5K4s_Y",
+                        "to_name": "image",
+                        "type": "choices",
+                        "value": {
+                            "choices": [
+                                "BW"
+                            ]
+                        }
+                    }
+                ]
+            }
+        ]
+    },
+    "10": {
+        "id": 10,
+        "data": {
+            "image": "https://raw.githubusercontent.com/lukaskrumholz/label-studio/master/example_images/resume_1_1.png",
+            "pdf": "<embed src='https://docs.google.com/gview?url=https://raw.githubusercontent.com/lukaskrumholz/label-studio/master/example_images/application_1.pdf&embedded=true' width='100%' height='600px'</embed>"
+        },
+        "predictions": [
+            {
+                "model_version": "model 1",
+                "created_ago": "4 hours",
+                "result": [
+                    {
+                        "from_name": "choice_type",
+                        "id": "XDj-5K4s_Y",
+                        "to_name": "image",
+                        "type": "choices",
+                        "value": {
+                            "choices": [
+                                "143 - Resumee"
+                            ]
+                        }
+                    },
+                    {
+                        "from_name": "choice_color",
+                        "id": "XDj-5K4s_Y",
+                        "to_name": "image",
+                        "type": "choices",
+                        "value": {
+                            "choices": [
+                                "Color"
+                            ]
+                        }
+                    }
+                ]
+            }
+        ]
+    },
+    "11": {
+        "id": 11,
+        "data": {
+            "image": "https://raw.githubusercontent.com/lukaskrumholz/label-studio/master/example_images/resume_1_2.png",
+            "pdf": "<iframe src='https://docs.google.com/gview?url=https://raw.githubusercontent.com/lukaskrumholz/label-studio/master/example_images/application_1.pdf&embedded=true' width='100%' height='600px'</iframe>"
+        },
+        "predictions": [
+            {
+                "model_version": "model 1",
+                "created_ago": "4 hours",
+                "result": [
+                    {
+                        "from_name": "choice_type",
+                        "id": "XDj-5K4s_Y",
+                        "to_name": "image",
+                        "type": "choices",
+                        "value": {
+                            "choices": [
+                                "135 - Certificate"
+                            ]
+                        }
+                    }
+                ]
+            }
+        ]
+    },
+    "12": {
+        "id": 12,
+        "data": {
+            "image": "https://raw.githubusercontent.com/lukaskrumholz/label-studio/master/example_images/recomm_1.png",
+            "pdf": "<iframe src='https://docs.google.com/gview?url=https://raw.githubusercontent.com/lukaskrumholz/label-studio/master/example_images/application_1.pdf&embedded=true' width='100%' height='600px'</iframe>"
+        }
+    },
+    "13": {
+        "id": 13,
+        "data": {
+            "image": "https://raw.githubusercontent.com/lukaskrumholz/label-studio/master/example_images/certificate_1.png",
+            "pdf": "<iframe src='https://docs.google.com/gview?url=https://raw.githubusercontent.com/lukaskrumholz/label-studio/master/example_images/application_1.pdf&embedded=true' width='100%' height='600px'</iframe>"
+        }
+    },
+    "14": {
+        "id": 14,
+        "data": {
+            "image": "https://raw.githubusercontent.com/lukaskrumholz/label-studio/master/example_images/cover_letter_2.png",
+            "pdf": "<iframe src='https://docs.google.com/gview?url=https://raw.githubusercontent.com/lukaskrumholz/label-studio/master/example_images/application_2.pdf&embedded=true' width='100%' height='600px'</iframe>"
+        },
+        "predictions": [
+            {
+                "model_version": "model 1",
+                "created_ago": "4 hours",
+                "result": [
+                    {
+                        "from_name": "image",
+                        "to_name": "free_text_answer",
+                        "type": "textarea",
+                        "value": {
+                            "text": "Duke Wellington"
+                        }
+                    }
+                ]
+            }
+        ]
+    },
+    "15": {
+        "id": 15,
+        "data": {
+            "image": "https://raw.githubusercontent.com/lukaskrumholz/label-studio/master/example_images/resume_2_1.png",
+            "pdf": "<iframe src='https://docs.google.com/gview?url=https://raw.githubusercontent.com/lukaskrumholz/label-studio/master/example_images/application_2.pdf&embedded=true' width='100%' height='600px'</iframe>"
+        }
+    },
+    "16": {
+        "id": 16,
+        "data": {
+            "image": "https://raw.githubusercontent.com/lukaskrumholz/label-studio/master/example_images/resume_2_2.png",
+            "pdf": "<iframe src='https://docs.google.com/gview?url=https://raw.githubusercontent.com/lukaskrumholz/label-studio/master/example_images/application_2.pdf&embedded=true' width='100%' height='600px'</iframe>"
+
+        }
+    },
+    "17": {
+        "id": 17,
+        "data": {
+            "image": "https://raw.githubusercontent.com/lukaskrumholz/label-studio/master/example_images/recomm_2.png",
+            "pdf": "<iframe src='https://docs.google.com/gview?url=https://raw.githubusercontent.com/lukaskrumholz/label-studio/master/example_images/application_2.pdf&embedded=true' width='100%' height='600px'</iframe>"
         }
     }
 }
