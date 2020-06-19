@@ -188,7 +188,7 @@ const LSB = function(elid, config, task) {
       //"completions:menu", // right menu with completion items
       //"completions:add-new",
       //"completions:delete",
-      "side-column", // entity
+      //"side-column", // entity
       //"skip"
     ],
 
