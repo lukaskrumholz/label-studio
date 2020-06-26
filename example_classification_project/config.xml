@@ -6,7 +6,7 @@
   </View>
 
   <View style="padding-left: 1em">
-    <Image name="image" value="$image" zoom="true" maxWidth="500px"/>
+    <Image name="image" value="$image" zoom="true" maxWidth="570px"/>
   </View>
 
   <View style="padding-left: 1em; margin-right: 1em; width: 300px;">
