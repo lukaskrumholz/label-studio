@@ -1,67 +1,71 @@
 <View style="display: flex;">
-  <View>
-    <HyperText name="pdf" value="$pdf"/>
+
+
+  <View style="width: 400px">
+    <PDF name="pdf" value="$pdf"/>
   </View>
 
-  <View style="padding-left: 2em">
+  <View style="padding-left: 1em">
     <Image name="image" value="$image" zoom="true" maxWidth="500px"/>
   </View>
 
-  <View style="padding-left: 2em; margin-right: 2em; width: 300px;">
-    <Header value="Document Type:" size="5"/>
-    <View style="height: 40px; border-radius: 3px; overflow-y: auto;">
-      <Filter name="fl_choice_type" toName="choice_type" placeholder="Document Type" hotkey="shift+1" minlength="1"/>
+  <View style="padding-left: 1em; margin-right: 1em; width: 300px;">
+    <View style="height: 30px; border-radius: 3px;">
+      <Filter name="fl_choice_type" toName="choice_type" placeholder="Document Type" hotkey="shift+1" minlength="1" autofocus="true"/>
     </View>
-    <View style="height: 120px; border-radius: 3px; overflow-y: auto;">
-      <Choices name="choice_type" toName="image" choice="label" showInLine="false" required="true" alias="Document Type">
-        <Choice value="124 - Cover Letter" alias="124" />
-        <Choice value="143 - Resumee" alias="143" />
-        <Choice value="152 - Recommendation" alias="124" />
-        <Choice value="135 - Certificate" alias="723" />
-        <Choice value="201 - Insurance" alias="621" />
-        <Choice value="202 - Invoice" alias="735" />
-        <Choice value="222 - Contract" alias="222" />
-        <Choice value="231 - Proposal" alias="135" />
-        <Choice value="244 - Specification" alias="244" />
-        <Choice value="367 - Mail" alias="367" />
-        <Choice value="333 - Document Type A" alias="333" />
-        <Choice value="621 - Personnel Record" alias="231" />
-        <Choice value="723 - Documentation" alias="110" />
-        <Choice value="890 - Document Type B" alias="990" />
-        <Choice value="891 - Document Type C" alias="991" />
-        <Choice value="892 - Document Type D" alias="992" />
-        <Choice value="893 - Document Type E" alias="993" />
-        <Choice value="894 - Document Type F" alias="994" />
-        <Choice value="895 - Document Type G" alias="995" />
-        <Choice value="896 - Document Type H" alias="996" />
-        <Choice value="897 - Document Type I" alias="997" />
-        <Choice value="898 - Document Type J" alias="998" />
-        <Choice value="899 - Document Type K" alias="999" />
-        <Choice value="990 - Document Type L" alias="890" />
-        <Choice value="991 - Document Type M" alias="891" />
-        <Choice value="992 - Document Type N" alias="892" />
-        <Choice value="993 - Document Type O" alias="893" />
-        <Choice value="994 - Document Type P" alias="894" />
-        <Choice value="995 - Document Type Q" alias="895" />
-        <Choice value="996 - Document Type R" alias="896" />
-        <Choice value="997 - Document Type S" alias="897" />
-        <Choice value="998 - Document Type T" alias="898" />
-        <Choice value="999 - Document Type U" alias="899" />
+    <View style="height: 365px; border-radius: 3px; overflow-y: auto;">
+      <Choices name="choice_type" toName="image" choice="label" showInLine="false" required="true" alias="Document Type" requiredMessage="Document Type needs to be specified">
+        <Choice value="124 - Cover Letter" alias="124" disablehotkey="true" />
+        <Choice value="143 - Resumee" alias="143" disablehotkey="true" />
+        <Choice value="152 - Recommendation" alias="124" disablehotkey="true" />
+        <Choice value="135 - Certificate" alias="723" disablehotkey="true" />
+        <Choice value="201 - Insurance" alias="621" disablehotkey="true" />
+        <Choice value="202 - Invoice" alias="735" disablehotkey="true" />
+        <Choice value="222 - Contract" alias="222" disablehotkey="true" />
+        <Choice value="231 - Proposal" alias="135" disablehotkey="true" />
+        <Choice value="244 - Specification" alias="244" disablehotkey="true" />
+        <Choice value="367 - Mail" alias="367" disablehotkey="true" />
+        <Choice value="333 - Document Type A" alias="333" disablehotkey="true" />
+        <Choice value="621 - Personnel Record" alias="231" disablehotkey="true" />
+        <Choice value="723 - Documentation" alias="110" disablehotkey="true" />
+        <Choice value="890 - Document Type B" alias="990" disablehotkey="true" />
+        <Choice value="891 - Document Type C" alias="991" disablehotkey="true" />
+        <Choice value="892 - Document Type D" alias="992" disablehotkey="true" />
+        <Choice value="893 - Document Type E" alias="993" disablehotkey="true" />
+        <Choice value="894 - Document Type F" alias="994" disablehotkey="true" />
+        <Choice value="895 - Document Type G" alias="995" disablehotkey="true" />
+        <Choice value="896 - Document Type H" alias="996" disablehotkey="true" />
+        <Choice value="897 - Document Type I" alias="997" disablehotkey="true" />
+        <Choice value="898 - Document Type J" alias="998" disablehotkey="true" />
+        <Choice value="899 - Document Type K" alias="999" disablehotkey="true" />
+        <Choice value="990 - Document Type L" alias="890" disablehotkey="true" />
+        <Choice value="991 - Document Type M" alias="891" disablehotkey="true" />
+        <Choice value="992 - Document Type N" alias="892" disablehotkey="true" />
+        <Choice value="993 - Document Type O" alias="893" disablehotkey="true" />
+        <Choice value="994 - Document Type P" alias="894" disablehotkey="true" />
+        <Choice value="995 - Document Type Q" alias="895" disablehotkey="true" />
+        <Choice value="996 - Document Type R" alias="896" disablehotkey="true" />
+        <Choice value="997 - Document Type S" alias="897" disablehotkey="true" />
+        <Choice value="998 - Document Type T" alias="898" disablehotkey="true" />
+        <Choice value="999 - Document Type U" alias="899" disablehotkey="true" />
       </Choices>
     </View>
 
-    <View style="margin-top: 3em; border-radius: 3px">
-      <Header value="Color:" size="5"/>
-      <Filter name="fl_choice_color" toName="choice_color" placeholder="Color" hotkey="shift+2" minlength="1"/>
-      <Choices name="choice_color" toName="image" choice="label" showInLine="true" required="true">
-        <Choice value="Color" />
-        <Choice value="BW" />
-      </Choices>
+    <View style="margin-top: 3.5em; border-radius: 3px">
+      <View style="height: 30px; border-radius: 3px;">
+        <Filter name="fl_choice_color" toName="choice_color" placeholder="Color" hotkey="shift+2" minlength="1"/>
+      </View>
+      <View style="height: 40px; border-radius: 3px; margin-top:-1em;">
+        <Choices name="choice_color" toName="image" choice="label" showInLine="true" required="true" requiredMessage="Color needs to be specified">
+          <Choice value="Color" hotkey="c"/>
+          <Choice value="BW" hotkey="b"/>
+        </Choices>
+      </View>
     </View>
   
-    <View style="height: 100px; margin-top: 3em; border-radius: 3px">
-      <Header value="Employee Name:" size="5"/>
-      <TextArea name="free_text_answer" toName="image" placeholder="Employee Name" showSubmitButton="false" maxSubmissions="1" editable="true" required="true" hotkey="shift+3"/>
+    <View style="height: 100px; margin-top: 2.5em; border-radius: 3px">
+      <Header value="Employee Name:" size="6"/>
+      <TextArea name="free_text_answer" toName="image" placeholder="Employee Name" showSubmitButton="false" maxSubmissions="1" editable="true" required="false" hotkey="shift+3"/>
     </View>
   </View>
 
