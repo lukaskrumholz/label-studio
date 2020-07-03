@@ -1,19 +1,29 @@
 <View style="display: flex;">
 
 
-  <View style="width: 400px">
+  <View style="width: 400px; border: 1px solid rgba(34, 36, 38, 0.15); border-radius: 0.28571429rem;">
     <PDF name="pdf" value="$pdf"/>
   </View>
 
-  <View style="padding-left: 1em">
-    <Image name="image" value="$image" zoom="true" maxWidth="570px"/>
+  <Style>
+  .v { max-width: 950px; }
+  .v img {
+    max-height: 85vh;
+    max-width: 100% !important;
+    width: auto !important;
+    border: 1px solid rgba(34, 36, 38, 0.15);
+  }
+  </Style>
+
+  <View classname="v" style="margin-left: auto; padding-left: 1em; padding-right: 1em;">
+    <Image name="image" value="$image" zoom="true" />
   </View>
 
-  <View style="padding-left: 1em; margin-right: 1em; width: 300px;">
+  <View style="margin-left: auto; order: 2; width: 300px; border: 1px solid rgba(34, 36, 38, 0.15); border-radius: 0.28571429rem; padding:0.5em;">
     <View style="height: 30px; border-radius: 3px;">
-      <Filter name="fl_choice_type" toName="choice_type" placeholder="Document Type" hotkey="shift+1" minlength="1" autofocus="true"/>
+      <Filter name="fl_choice_type" toName="choice_type" placeholder="Document Type" hotkey="shift+1" minlength="1" autofocus="true" nextinput="fl_choice_color"/>
     </View>
-    <View style="height: 365px; border-radius: 3px; overflow-y: auto;">
+    <View style="height: 365px; border-radius: 3px; overflow-y: auto; margin-top:0;">
       <Choices name="choice_type" toName="image" choice="label" showInLine="false" required="true" alias="Document Type" requiredMessage="Document Type needs to be specified">
         <Choice value="124 - Cover Letter" alias="124" disablehotkey="true" />
         <Choice value="143 - Resumee" alias="143" disablehotkey="true" />
@@ -53,7 +63,7 @@
 
     <View style="margin-top: 3.5em; border-radius: 3px">
       <View style="height: 30px; border-radius: 3px;">
-        <Filter name="fl_choice_color" toName="choice_color" placeholder="Color" hotkey="shift+2" minlength="1"/>
+        <Filter name="fl_choice_color" toName="choice_color" placeholder="Color" hotkey="shift+2" minlength="1" nextinput="text_employee_name"/>
       </View>
       <View style="height: 40px; border-radius: 3px; margin-top:-1em;">
         <Choices name="choice_color" toName="image" choice="label" showInLine="true" required="true" requiredMessage="Color needs to be specified">
@@ -65,7 +75,7 @@
   
     <View style="height: 100px; margin-top: 2.5em; border-radius: 3px">
       <Header value="Employee Name:" size="6"/>
-      <TextArea name="free_text_answer" toName="image" placeholder="Employee Name" showSubmitButton="false" maxSubmissions="1" editable="true" required="false" hotkey="shift+3"/>
+      <TextArea name="text_employee_name" toName="image" placeholder="Employee Name" showSubmitButton="false" maxSubmissions="1" editable="true" required="false" hotkey="shift+3"/>
     </View>
   </View>
 

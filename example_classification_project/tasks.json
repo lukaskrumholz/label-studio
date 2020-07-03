@@ -23,7 +23,7 @@
                     },
                     {
                         "from_name": "image",
-                        "to_name": "free_text_answer",
+                        "to_name": "text_employee_name",
                         "type": "textarea",
                         "value": {
                             "text": "Michelle"
@@ -134,7 +134,7 @@
                 "result": [
                     {
                         "from_name": "image",
-                        "to_name": "free_text_answer",
+                        "to_name": "text_employee_name",
                         "type": "textarea",
                         "value": {
                             "text": "Duke Wellington"
@@ -194,7 +194,7 @@
                     },
                     {
                         "from_name": "image",
-                        "to_name": "free_text_answer",
+                        "to_name": "text_employee_name",
                         "type": "textarea",
                         "value": {
                             "text": "Michelle"
@@ -305,7 +305,7 @@
                 "result": [
                     {
                         "from_name": "image",
-                        "to_name": "free_text_answer",
+                        "to_name": "text_employee_name",
                         "type": "textarea",
                         "value": {
                             "text": "Duke Wellington"
